@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Canvas02</title>
+</head>
+<body>
+    <div class="canvas-container">
+        <div class="canvas-container_left">
+            <div class="canvas-container_left_change">
+                <div class="canvas-container_left_color tools">
+                    <h1>Цвет пера</h1>
+                </div>
+                <input id="input" type="color" value="#ff0000">
+                <h2>Толщина пера</h2>
+               
+                <h2>Размер холста</h2>
+                <button id="canvaSizeA"class="btn btn-outline-primary">500x700</button>
+                <button id="canvaSizeB" class="btn btn-outline-primary">300x500</button>
+                <button id="canvaSizeC" class="btn btn-outline-primary">100x300</button>
+                <div class="canvas-container_left_stroke_clear">
+                    <button id="clear-canvas">Очистить Canvas</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="canvas-container_right">
+            <canvas id="canvas" height="500px" width="700px"></canvas>
+        </div>
+
+        <div class="canvas-container_stroke tools" data-toggle="buttons">
+            
+            <button id='change-size-a' class="btn btn-secondary active">10x10</button>
+            <button id='change-size-b' class="btn btn-primary">20x20</button>
+            <button id='change-size-c' class="btn btn-primary">50x50</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
