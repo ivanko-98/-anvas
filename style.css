@@ -17,12 +17,12 @@ body{
 .canvas-container_left{
     width: 500px;
     height: 500px;
-    border: 5px solid green;
 }
 
-.canvas-container_right{
-    border: 5px solid #00ff89;
+.canvas-container_center{
+    border: 5px solid #007bff;
     border-style: dotted;
+    margin-top: 10px;
 }
 
 .canvas-container_left_change{
@@ -32,30 +32,81 @@ body{
     margin:100px;
 }
 
-.canvas-container_left_stroke {
+.canvas-container_stroke{
 
 
     margin-bottom: 20px;
     display:flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
-
+    border: 2px solid black;
+    padding: 30px;
 }
-
 .canvas-container_left_color{
 
     font-size: 25px;
     text-align: center;
+    border:2px solid black;
 } 
 
 .canvas-container_left_stroke_clear{
 
-    margin-top:5px;
+    margin-top: 5px;
+}
+
+.canvas-container_right{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+#change-size-a{
+
+    margin-bottom: 10px;
+    box-shadow: 10px 5px 5px red;
+}
+
+#change-size-b{
+
+    margin-bottom: 10px;
+    box-shadow: 10px 5px 5px red;
+}
+
+
+#change-size-c{
+
+    margin-bottom: 10px;
+    box-shadow: 10px 5px 5px red;
 }
 
 #size{
 margin-top:10px;
 
+}
+
+#canvaSizeA{
+
+    margin-bottom: 10px;
+    box-shadow: 10px 5px 5px;
+}
+
+#canvaSizeB{
+
+    margin-bottom: 10px;
+    box-shadow: 10px 5px 5px;
+}
+
+#canvaSizeC{
+
+    margin-bottom: 10px;
+    box-shadow: 10px 5px 5px;
 }
 
 h1{
@@ -158,9 +209,10 @@ h2{
     margin-top: 70px;
 }
 
-input{
+#input{
 
-    margin-top: 25px;
+    margin-bottom: 10px;
+
 }
 
 @media screen and (max-width: 1080px){
@@ -173,10 +225,10 @@ input{
     }
 }
 
-@media screen and (max-width: 961px){
+@media screen and (max-width: 1055px){
 
-    .canvas-container_right{
-        width: 70%;
+    .canvas-container_center{
+        width: 50%;
     }
 }
 
@@ -202,7 +254,7 @@ input{
     }
 }
 
-@media screens and (max-width: 374px){
+@media screen and (max-width: 374px){
 
     .h1, h1{
       font-size: 1.5rem;
@@ -223,6 +275,64 @@ input{
         font-size: 5px;
     }
 }
+
+@media screen and (max-width: 701px){
+    
+    #palitra {
+
+        font-size: 1rem;
+    }
+
+    #change-size-a {
+
+        font-size: 10px;
+    }
+
+    #change-size-b {
+
+        font-size: 10px;
+    }
+
+    #change-size-c {
+
+        font-size: 10px;
+    }
+    #size {
+
+         font-size: 10px; 
+    }
+
+    #widthP{
+
+        font-size: 10px;
+    }
+
+    #clear-canvas{
+
+    font-size: 7px; 
+
+    }
+    #canvaSizeA {
+        
+        font-size: 10px;
+
+    }
+
+    #canvaSizeB {
+        
+        font-size: 10px;
+
+    }
+
+    #canvaSizeC {
+        
+        font-size: 10px;
+
+    }
+
+}
+
+
 
 
 /* :hover :active ... ; position: absolute, static, fixed ... ; vh vw ; */

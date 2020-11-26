@@ -11,31 +11,27 @@
     <div class="canvas-container">
         <div class="canvas-container_left">
             <div class="canvas-container_left_change">
-                <div class="canvas-container_left_color tools">
-                    <h1>Цвет пера</h1>
+                <div class="canvas-container_stroke " data-toggle="buttons">
+                    <h2 id="widthP">Толщина пера</h2>
+                    <button id='change-size-a' class="btn btn-outline-primary">10x10</button>
+                    <button id='change-size-b' class="btn btn-outline-primary">20x20</button>
+                    <button id='change-size-c' class="btn btn-outline-primary">50x50</button>
+                    <button id="clear-canvas" class="btn btn-outline-primary">Очистить Canvas</button>
                 </div>
+                <div class="canvas-container_left_color">
+                    <h1 id="palitra">Палитра цветов</h1>
                 <input id="input" type="color" value="#ff0000">
-                <h2>Толщина пера</h2>
-               
-                <h2>Размер холста</h2>
-                <button id="canvaSizeA"class="btn btn-outline-primary">500x700</button>
-                <button id="canvaSizeB" class="btn btn-outline-primary">300x500</button>
-                <button id="canvaSizeC" class="btn btn-outline-primary">100x300</button>
-                <div class="canvas-container_left_stroke_clear">
-                    <button id="clear-canvas">Очистить Canvas</button>
-                </div>
-                
+               </div>
             </div>
         </div>
-        <div class="canvas-container_right">
-            <canvas id="canvas" height="500px" width="700px"></canvas>
+        <div class="canvas-container_center">
+            <canvas id="canvas" height="400px" width="600px"></canvas>
         </div>
-
-        <div class="canvas-container_stroke tools" data-toggle="buttons">
-            
-            <button id='change-size-a' class="btn btn-secondary active">10x10</button>
-            <button id='change-size-b' class="btn btn-primary">20x20</button>
-            <button id='change-size-c' class="btn btn-primary">50x50</button>
+        <div class="canvas-container_right">
+            <h2 id="size">Размер канваса</h2>
+            <button id="canvaSizeA"class="btn btn-outline-primary">500x700</button>
+            <button id="canvaSizeB" class="btn btn-outline-primary">300x500</button>
+            <button id="canvaSizeC" class="btn btn-outline-primary">100x300</button>
         </div>
     </div>
     <script src="script.js"></script>
